@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript">
+	function definirFecha(desde,hasta){
+		
+		for (var i = desde; i <= hasta; i++) {
+			document.write("<option>"+i+"</option>");
+		};
+	}
+	</script>
+	<title>Ejemplo de funciones en javascript</title>
+</head>
+<body>
+
+	<form>
+		<select id="dia" name="dia">
+			<script type="text/javascript">
+				definirFecha(1,31);
+			</script> 
+		</select>
+		<select id="dia" name="dia">
+			<script type="text/javascript">
+				definirFecha(1,12);
+			</script> 
+		</select>
+		<select id="dia" name="dia">
+			<script type="text/javascript">
+				definirFecha(2010,2020);
+			</script> 
+		</select>
+	</form>
+
+</body>
+</html>
