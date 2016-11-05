@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<title>Ejemplo de fecha con arreglos</title>
+	<script type="text/javascript">
+    var fecha  = new Date();
+    var numdia = fecha.getDate();
+    var dia    = fecha.getDay();
+    var mes    = fecha.getMonth();
+    var anio   = fecha.getFullYear();
+
+    var meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+    var dias = ['domingo','lunes','martes','miercoles','jueves','viernes','sabado']
+
+    document.write("Hoy es "+dias[dia]+" "+numdia+" de "+meses[mes]+" del "+anio);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
