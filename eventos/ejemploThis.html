@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript">
+	  function evento(btn){
+	  	alert("Realizaste click en el "+btn.id);
+	  }
+	</script>
+	<title>Ejemplo de uso de this en eventos</title>
+</head>
+<body>
+
+	<input type="button" id="boton1" value="boton 1" onclick="evento(this)">
+	<input type="button" id="boton2" value="boton 2" onclick="evento(this)">
+	<input type="button" id="boton3" value="boton 3" onclick="evento(this)">
+    
+</body>
+</html>
