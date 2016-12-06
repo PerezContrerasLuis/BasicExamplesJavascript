@@ -10,7 +10,19 @@
 	 	list-style-type: none;
 	 	padding: 5px;
 	 }
+     
+     /*estilo para ayuda al posicionarnos en la caja de input */
+	 .enfoco{
+	 	background-color: yellow;
+	 	border: 1px solid green;
+	 }
+
+	 .ayuda{
+	 	color: red;
+	 	font-size: small;
+	 }
 	</style>
+	<script type="text/javascript" src="validacion.js"></script>
 </head>
 <body>
 
@@ -19,19 +31,19 @@
     <ul>
     	<li>
     		<label>Nombre:</label><br/>
-    		<input >
+    		<input onfocus="enfoco(this)" onblur="fuerafoco(this)">
     	</li>
 		<li>
 		    <label>Direccion:</label><br/>
-		    <input>
+		    <input onfocus="enfoco(this)" onblur="fuerafoco(this)">
 		</li>
 		<li>
 		    <label>Correo:</label><br/>
-		    <input>
+		    <input onfocus="enfoco(this)" onblur="fuerafoco(this)">
 		</li>
 		<li>
 		    <label>telefono:</label><br/>
-		    <input>
+		    <input onfocus="enfoco(this)" onblur="fuerafoco(this)">
 		</li>
 		<li>
 			<input type="button" value="Enviar">
